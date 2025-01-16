@@ -1,0 +1,45 @@
+	.post aside{
+        position: sticky;
+        top: 30px;
+        max-height: calc(100vh - 20px); /* Ensure TOC doesn't overflow the screen */
+        overflow-y: auto;
+	}
+
+    @media(max-width:600px){
+	.post aside{position:static;height:auto;min-height:auto;}
+	}
+
+    .toc {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin-right: 40px;
+    }
+    .toc h2 {
+        margin-top: 0;
+		font-size:20px;
+    }
+    .toc ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    .toc ul li {
+        margin: 5px 0;
+		font-size:16px;
+    }
+    .toc a {
+        text-decoration: none;
+        color: #007bff;
+    }
+    .toc a:hover,
+    .toc a.active {
+        text-decoration: underline;
+        color: #0056b3; /* Change the color for active link */
+        font-weight: bold; /* Add bold to highlight active link */
+    }
+    .toc-level-1 { margin-left: 0; }
+    .toc-level-2 { margin-left: 10px; }
+    .toc-level-3 { margin-left: 20px; }
+    .toc-level-4 { margin-left: 30px; }
+    .toc-level-5 { margin-left: 40px; }
+    .toc-level-6 { margin-left: 50px; }
